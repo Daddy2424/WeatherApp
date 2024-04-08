@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>All about Weather</title>
+  </head>
+  <body>
+    <h1>All About Weather</h1>
+    <div class="container">
+      <div class="searchBar">
+        <input type="text" placeholder="Location" id="searchInput">
+        <button id="searchBtn">Find Weather</button>
+      </div>
+      <p id="errorMsg" class="msg"></p>
+      <div class="resultContainer" id="result">
+        <div class="tempContainer">
+          <div class="temperature">
+            <p id="temp" style="font-weight: bold;"></p>
+            <p id="feelsLike" style="font-weight: bold;"></p>
+          </div>
+          <div class="condition">
+            <img src="" alt="" id="icon">
+            <p id="text" style="font-weight: bold;"></p>
+          </div>
+        </div>
+        <div class="dataBox">
+          <div id="uvIndex" class="data"></div>
+          <div id="humidity" class="data"></div>
+          <div id="wind" class="data"></div>
+          <div id="dewpoint" class="data"></div>
+          <div id="pressure" class="data"></div>
+          <div id="visibilty" class="data"></div>
+        </div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
