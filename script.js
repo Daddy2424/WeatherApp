@@ -19,7 +19,7 @@ const apiKey = `260d98c9714f422abaf203451242603`;
 searchBtn.addEventListener('click', () => {
   let inputValue = input.value;
   console.log(inputValue);
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${inputValue}`;
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${inputValue}`;
 
   if(!inputValue){
     msg.style.display = 'block';
